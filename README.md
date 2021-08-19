@@ -36,5 +36,26 @@
     - It can parallel an entire dataset across different clusters.
     - Reducers aggregate all processed data together.
 - Pig 
-  - A High Level Scripting language sits on top of MapReduce
+  - A High Level Programming API that let us write SQL like Scripting language.
+  - It sits on top of MapReduce.
+- Hive
+  - It also sit on top of MapReduce and also have similar similar functionalities as PIG.
+  - It's works like a SQL Database where you can query using SQL directly. 
+  - I can be connected through shell client or ODBC.
+- Apache Ambari
+  - It sits on top of everything and let us visulize and monetize all other services beneath it.
+  - Such as: What's running on the cluster, what systems are using how many resources.
+  - It also has Views which let use execute hive or pig querys to get results and connect databases and so on.
+- MESOS
+  - An alternative to YARN.
+  - It's a Resource Negotiator like YARN.
+- Spark
+  - It's sitting on the same level of MapReduce.
+  - It can do query same as MapReduce by utilizing YARN and MESOS.
+  - It also needs Spark scripting using languages like python, java, scala.
+  - It's extremely fast and powerful.
+  - It's also really efficient and reliable for processing data.
+  - It can handle SQL query, do machine learning across clusters of data, handle streaming data in real-time. It's extremely versatile and under active development.
+- TEZ
+  - 
 - 
