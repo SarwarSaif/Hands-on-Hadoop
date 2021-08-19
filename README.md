@@ -16,9 +16,25 @@
   - Disk seek times
   - Hardware failures
   - Processing times 
-- Horizontal scaling is linear. Hadoop uses clustures of computers with many many of many hard drives where they can all be seeking in parellel with all their independent disk heads. Don't have a single Point of Failure
-- Hadoop is not just for batch processing anymore
+- Hadoop uses Horizontal scaling which is linear. Hadoop uses clustures of computers with many many of many hard drives where they can all be seeking in parellel with all their independent disk heads. Don't have a single Point of Failure. Hadoop also offers parallel processing throughout the clusters that can take advantage of all the CPUs. 
+- Hadoop is not just for batch processing anymore.
 
 <a href="https://www.section.io/blog/scaling-horizontally-vs-vertically/">Scaling Horizontally vs. Scaling Vertically</a>
 "Horizontal scaling means scaling by adding more machines to your pool of resources (also described as “scaling out”), whereas vertical scaling refers to scaling by adding more power (e.g. CPU, RAM) to an existing machine (also described as “scaling up”)."
 
+## Hadoop Ecosystem Overview
+### Core Hadoop Ecosystem
+- HDFS (Hadoop Distributed File System) 
+  - It let us distribute the storages of big data into clusters of computers. 
+  - Maintains Redundant copy of the data.
+- YARN 
+  - Manages the resources in the clusters.
+  - Decides when and what node to run next, which nodes are available and which nodes are not.
+- MapReduce
+  - It's a program model that helps to process a dataset across clusters.
+  - MapReduce has two scripts: 1. MapReduce and 2. Reducer
+    - It can parallel an entire dataset across different clusters.
+    - Reducers aggregate all processed data together.
+- Pig 
+  - A High Level Scripting language sits on top of MapReduce
+- 
