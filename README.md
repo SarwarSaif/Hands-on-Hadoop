@@ -12,11 +12,11 @@
 
 ## Why Hadoop?
 - Now-a-days data is too big to handle through one computer as companies generate terrabytes of data per day.
-- Vertical scaling doesn't cut it
+- Databases like Oracle uses Vertical scaling which doesn't cut it. They have problems like:
   - Disk seek times
   - Hardware failures
-  - Processing times
-- Horizontal scaling is linear
+  - Processing times 
+- Horizontal scaling is linear. Hadoop uses clustures of computers with many many of many hard drives where they can all be seeking in parellel with all their independent disk heads. Don't have a single Point of Failure
 - Hadoop is not just for batch processing anymore
 
 <a href="https://www.section.io/blog/scaling-horizontally-vs-vertically/">Scaling Horizontally vs. Scaling Vertically</a>
