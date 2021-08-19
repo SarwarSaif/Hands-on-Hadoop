@@ -18,4 +18,7 @@
   - Processing times
 - Horizontal scaling is linear
 - Hadoop is not just for batch processing anymore
-- 
+
+<a href="https://www.section.io/blog/scaling-horizontally-vs-vertically/">Scaling Horizontally vs. Scaling Vertically</a>
+"Horizontal scaling means scaling by adding more machines to your pool of resources (also described as “scaling out”), whereas vertical scaling refers to scaling by adding more power (e.g. CPU, RAM) to an existing machine (also described as “scaling up”)."
+
