@@ -9,3 +9,13 @@
 - Hadoop was primarily driven by Doug Cutting and Tom White in 2006. 
 - Hadoop was named after a stuffed elephant toy of Doug cutting's kid.
 - It's been evolving ever since and build a large ecosystem around it. 
+
+## Why Hadoop?
+- Now-a-days data is too big to handle through one computer as companies generate terrabytes of data per day.
+- Vertical scaling doesn't cut it
+  - Disk seek times
+  - Hardware failures
+  - Processing times
+- Horizontal scaling is linear
+- Hadoop is not just for batch processing anymore
+- 
