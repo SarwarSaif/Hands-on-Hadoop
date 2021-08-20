@@ -57,5 +57,24 @@
   - It's also really efficient and reliable for processing data.
   - It can handle SQL query, do machine learning across clusters of data, handle streaming data in real-time. It's extremely versatile and under active development.
 - TEZ
-  - 
-- 
+  - Usually used in conjunction with Hive to accelerate it.
+- Apache HBASE
+  - It's a NoSQL Database. A columner storage.
+  - Really really fast Database meant for very large transaction rates.
+  - It can exposed the data stored on the cluster with a very fast speed.
+- Apache Storm 
+  - A way of processing streaming data such as sensor data, log data and so on.
+  - Spark solves the same problem but Storm does it in a different way.
+  - Data doesn't need to be in batches and can be fed into machine learning models and transformation procedures.
+- OOZIE
+  - It's a way of scheduling job in the cluster.
+  - Task that needs to happen on the hadoop cluster that involves many different steps and may be many different systems, the scheduling can be reliably and efficiently handled by OOZIE.
+- Zookeeper
+  - To keep track of which nodes are up or which are down.
+  - It's a very realiable way to keep track of the shared states across the clusters.
+- Sqoop (For Data Ingestion onto HDFS from external sources)
+  -  It's a way for tying hadoop database with a relational/legacy databases.
+  -  Anything that can talk to ODBC or JDBC can be transformed by Sqoop into HDFS file system.
+- Flume 
+  - It's a way of actually transporting web logs at a very large scale very reliably to the cluster.
+  -  
