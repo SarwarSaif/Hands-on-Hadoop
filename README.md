@@ -75,6 +75,26 @@
 - Sqoop (For Data Ingestion onto HDFS from external sources)
   -  It's a way for tying hadoop database with a relational/legacy databases.
   -  Anything that can talk to ODBC or JDBC can be transformed by Sqoop into HDFS file system.
-- Flume 
-  - It's a way of actually transporting web logs at a very large scale very reliably to the cluster.
-  -  
+- Flume (For Data Ingestion onto HDFS from external sources)
+  - It's a way of actually transporting web logs at a very large scale very reliably to the cluster at real time.
+- Kafka (For Data Ingestion onto HDFS from external sources)
+  - It also solves a similar problem like flume.
+  - It can basically collect data of any sort from a cluster of PCs from a cluster of web servers or whatever and broadcast that into a hadoop cluster.
+
+### External Data Storage
+- MySQL
+- MongoDB
+- Cassandra
+
+### Query Engines
+- Apache Drill
+  - It allows to write SQL queries that will work across a wide range of NoSQL databases.
+- HUE
+  - It's kind of similar to Ambari 
+- Apache Phoenix
+  - Similar to apache drill and let us do SQL style queries across entire range.
+  - But it also give us ACID gurantees and OLTP.
+- Presto 
+  - Another way to execute queries across entire cluster. 
+- Apache Zeppelin
+  - It takes more of a notebook type approach to the UI and how we interact with the cluster.
