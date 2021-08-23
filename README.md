@@ -107,5 +107,18 @@
   - Different blocks can be stored across several commodity computers. If a computer goes down HDFS can delat with that by retrieving information from a different computer where it stored the backups.
 
 ### HDFS Architecture
+There are two types of Nodes.
+1. Name Node 
+  - It's a single node.
+  - It keeps track of where all different blocks live. 
+  - It also maintains an edit log which maintains a record of whats's being modified or what's being stored on the data nodes to keep track of everything.
+  - 
+3. Data Nodes
+  - There can be multiple data nodes.
+  - These nodes are what actually store each block of each file. 
+  - These nodes can talk to each other as well to maintain those copies and replication of those blocks.
 
+#### Reading a File in HDFS
+- Suppose an application running on a dclient node which needs access to data stored on the HDFS. First thing that it will do that it'll talk to the Name node for the the desired files. Name node will search the files and return the blocks locations for each file.
+- 
 
