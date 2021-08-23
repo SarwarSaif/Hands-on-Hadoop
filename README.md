@@ -98,3 +98,14 @@
   - Another way to execute queries across entire cluster. 
 - Apache Zeppelin
   - It takes more of a notebook type approach to the UI and how we interact with the cluster.
+  
+  
+## HDFS (Haddop DIstributed File System)
+### What is HDFS?
+  - It's made for handling large files. It is basically optimized for very large files which can be distributed and broken up across and entire cluster.
+  - Breaks the files into blocks and each blocks are 128 MB by default. 
+  - Different blocks can be stored across several commodity computers. If a computer goes down HDFS can delat with that by retrieving information from a different computer where it stored the backups.
+
+### HDFS Architecture
+
+
