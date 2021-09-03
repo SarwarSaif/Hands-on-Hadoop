@@ -123,4 +123,14 @@ There are two types of Nodes.
 
 #### Writing a File in HDFS
 - In case of writing files in HDFS, the client node have to ask the namenode at first. If the namenode finds any empty locations on data nodes where the data can be stored, it gives the client node those information about the datanodes. The client node then sends the data to the specified data node and data node then talk to each other to store and replicate the dataset and send acknowledgement.
-- 
+
+#### What will happen if the Name Node gets damaged?
+There are few ways to deal with that which are considered at Namenode Resilience. And those are:
+1. Backup Metadata
+  - The simple way to deal with namenode failure might be to use a backup on any other local disk and NFS or on a storage in another location.
+  - The problem is that there will be some lag and as a result we might lost some information in the time of failure as it will take longer time to backup a namenode on another location. So if the use case is not sensitive to downtime than it's alright to use this configuration.
+3. Secondary Namenode
+4. HDFS Federation
+5. HDFS High Availability
+
+
