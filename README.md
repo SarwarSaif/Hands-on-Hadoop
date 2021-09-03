@@ -119,6 +119,8 @@ There are two types of Nodes.
   - These nodes can talk to each other as well to maintain those copies and replication of those blocks.
 
 #### Reading a File in HDFS
-- Suppose an application running on a dclient node which needs access to data stored on the HDFS. First thing that it will do that it'll talk to the Name node for the the desired files. Name node will search the files and return the blocks locations for each file.
-- 
+- Suppose an application running on a client node which needs access to data stored on the HDFS. First thing that it will do that it'll talk to the Name node for the the desired files. Name node will search the files and return the blocks locations for each file.
 
+#### Writing a File in HDFS
+- In case of writing files in HDFS, the client node have to ask the namenode at first. If the namenode finds any empty locations on data nodes where the data can be stored, it gives the client node those information about the datanodes. The client node then sends the data to the specified data node and data node then talk to each other to store and replicate the dataset and send acknowledgement.
+- 
